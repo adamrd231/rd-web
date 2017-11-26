@@ -7,11 +7,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="jquery.fullPage.css" />
-<<<<<<< HEAD
-=======
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
->>>>>>> 33d43abf85bbe7016916565d7a91c8ba91e02066
-
     <script src="jquery.easings.min.js"></script>
     <script src="scrolloverflow.min.js"></script>
     <script src="jquery.fullPage.js"></script>
@@ -31,25 +27,34 @@
 
   <body>
 
-    <div id="fullpage">
+<div id="fullpage">
 
-<div class="section active">
-  <div class="landing-container">
+  <div class="section active">
+    <div class="landing-container">
 
-      <div class="background-image">
-        <img id="logo" src="images/logo.png" />
-      </div>
+        <div class="background-image">
+          <div>
+            <img id="logo" src="images/logo.png" />
+            <div id="welcome-text">
+                <h1>rdConcepts</h1>
+            </div>
+          </div>
 
-      <!-- Header Menu Layout -->
-      <div class="menu" id="menu">
-          <div><a href="http://localhost:8888/custom-rd/#welcome" class="link"> WELCOME</a></div>
-          <div><a href="http://localhost:8888/custom-rd/#philosophy" class="link"> OUR PHILOSOPHY </a></div>
-          <div><a href="http://localhost:8888/custom-rd/#work" class="link"> WORK </a></div>
-          <div><a href="http://localhost:8888/custom-rd/#contact" class="link"> CONTACT </a></div>
-      </div>
+
+          <!-- Header Menu Layout -->
+          <div class="menu" id="menu">
+              <div><a id="menu-item" href="http://localhost:8888/custom-rd/#welcome" class="link"> WELCOME</a></div>
+              <div><a id="menu-item" href="http://localhost:8888/custom-rd/#philosophy" class="link"> OUR PHILOSOPHY </a></div>
+              <div><a id="menu-item" href="http://localhost:8888/custom-rd/#work" class="link"> WORK </a></div>
+              <div><a id="menu-item" href="http://localhost:8888/custom-rd/#contact" class="link"> CONTACT </a></div>
+          </div>
+        </div>
+
+
+
 
     </div>
-</div>
+  </div>
 
     <!-- Landing Area -->
     <!-- Landing Area -->
@@ -62,14 +67,9 @@
         <div class="side-design"></div>
         <div id="welcome-title-text">
           <h1>Welcome</h1>
-            <h2>Our Mission</h2>
+            <h2>Simplify the world for more time to play.</h2>
               <p id="text-padding">
-                Founded in July 2015
-                Everything begins with a purpose and a plan. rdConcepts is a design studio based in Portland, Oregon.
-                We are designers, developers, illustrators, process creators, but most importantly we are problem solvers.
-                Extreme Ownership.
-                Simple is code for really well done.
-                Our win is to help companies/people improve the processes they use to get to their desired objectives, through design, development, strategic planning and leadership.
+                Founded in July 2015 rdConcepts is a design firm interested in challenging what has always been considered normal. Through careful prioritization, we are able to execute across a variety of different mediums. We believe in the value of design executed simply, finding the correct framework to solve a problem and building energy and passion for making the world a better place.
               </p>
         </div>
       </div>
@@ -106,14 +106,14 @@
         <div id="philosophies-text">
 
           <div id="philosophies-text-text-block">
-            <h2>OUR PHILOSOPHY</h2>
+            <h2>OUR VALUES</h2>
               <p id="text-padding">
-                I enjoy solving problems through illustrating ideas with graphic design, development and getting to see the best ways to take something from your imagination and make it into a reality.
+                Every design in the world originated from someone's pain. Whether it is the pain of not having the resources needed to live, the pain of a boring job, or the pain taken while trying to bring the ring of power to mordor. Great pain when understood, brings great design. Our goal in life is to live with and contemplate the best ways for us to enjoy the world around us and spread as much joy as possible.
               </p>
 
               <h2>Teamwork Makes the Dream Work</h2>
                 <p id="text-padding">
-                  I enjoy solving problems through illustrating ideas with graphic design, development and getting to see the best ways to take something from your imagination and make it into a reality.
+                  Changing the world is a big job, we realize that it might be a bigger task than can be accomplished by two people. We regularly work with other contractors, businesses and individuals to help solve their problems in a simple, beautiful way.
                 </p>
           </div>
 
@@ -161,15 +161,25 @@
       </div>
 
       <div class="copyright">
-        <h5>rdConcepts</h5>
-          <p>
-            Copyright 2012 - 2017   |  Theme by RD Concepts
-          </p>
+
+
+        <div id="copyright-text">
+          <h5>Thanks for Visiting</h5>
+            <p>Website Design and Development by rdConcepts</p>
+            <p>Portland, OR</p>
+        </div>
+
+        <div id="social-media-icons">
+          <a href="https://www.instagram.com/adamrd231/"><img id="social-icon" src="images/github.png" /></a>
+          <a href="https://github.com/adamrd231"><img id="social-icon" src="images/instagram.png" /></a>
+        </div>
+
+
       </div>
+
     </div>
 </div>
 
-
-
-</html>
+<!-- end fullPage wrap -->
 </div>
+</html>

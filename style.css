@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: Open Sans Condensed, open sans;
+  font-family: Lato, Open Sans Condensed, open sans;
   background-color: #222222;
 
 }
@@ -38,11 +38,11 @@ body {
 }
 
 #logo {
-  opacity: .66;
-  height: 35%;
-  width: 35%;
-  margin-left: 7%;
-  margin-top: 7%;
+  opacity: .77;
+  height: 15em;
+  width: 22em;
+  margin-left: 5em;
+  margin-top: 5em;
 }
 
 .welcome, .work, .philosophies {
@@ -60,11 +60,21 @@ body {
 .menu {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  padding: 2%;
-  background-color: #222222;
-  margin-left: 60%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  background-color: rgba(34, 34, 34, 0.85);
+  align-self: flex-end;
+
+}
+
+#menu-item {
+  margin-right: 2em;
+  width: 100%;
+}
+
+#menu-item:hover {
+  color: #0497d0;
 }
 
 .landing-container {
@@ -76,7 +86,11 @@ body {
 .background-image {
   background-image: url('images/home.JPG');
   background-size: cover;
-  height: 95vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .link {
@@ -110,14 +124,24 @@ body {
   background-image: url('images/home.JPG');
   opacity: .7;
   background-size: cover;
-  margin-top: 17%;
-  margin-bottom: 17%;
+  margin: auto;
+  height: 35em;
   width: 57%;
+}
+
+#welcome-text {
+  margin-top: -.5em;
+  background-color: rgba(34, 34, 34, 0.0);
+  margin-left: 3.3em;
+  font-size: 1.6em;
+  opacity: .7;
+  color: #0497d0;
+  text-shadow: .1em .1em #111111;
 }
 
 .side-design {
   width: 7%;
-  background-color: #222222;
+  background-color: #0497d0;
 }
 
 #welcome-title-text {
@@ -142,32 +166,36 @@ body {
   background-image: url('images/home.jpg');
   background-size: cover;
   width: 37%;
-  opacity: 1;
-  margin-top: 37%;
-  margin-bottom: 17%;
+  height: 20em;
+  margin-top: 50%;
   color: #999999;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
 }
 
 #p-background {
-  background-color: rgba(34, 34, 34, 0.8);
-  width: 90%;
-  height: 100%;
+  background-color: rgba(34, 34, 34, 0.9);
+  width: 87%;
+  height: 30em;
   padding-top: 5%;
-  padding-bottom: 15%;
-  margin-left: 0;
+  padding-bottom: 5%;
+
+  margin-top: 9%;
 
 }
 
 #adam {
   width: 70%;
   margin: auto;
+  padding: 3%;
 }
 
 #justin {
   width: 70%;
   margin: auto;
+  padding: 3%;
 }
 
 #philosophies-text {
@@ -178,14 +206,18 @@ body {
   margin-bottom: 45%;
   margin-left: 5%;
   margin-right: 5%;
+  align-self: center;
 }
 
 #philosophies-text-text-block {
-  margin-right: 13%;
+  margin-right: 17%;
+  margin-left: 5%;
+  margin-bottom: 9%;
 }
 
 #philosophies-text-image {
-  background-color: rgba(34, 34, 34, 0.8);
+  background-color: #0497d0;
+  width: 1.5em;
 
 }
 
@@ -293,20 +325,28 @@ body {
 .footer {
   margin: auto;
   text-align: center;
-  padding: 7%;
+  padding: 5%;
   text-decoration: none;
 }
 
 .copyright {
   padding: 3%;
-  background-color: #222222;
-  color: #999999;
+  padding-bottom: 2%;
+  background-color: #0497d0;
+  color: #222222;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+}
 
+#social-icon {
+  height: 3em;
+  width: 3em;
 }
 
 #get-in-touch {
   text-decoration: none;
-
 }
 
 #footer-call-to-action {
@@ -314,7 +354,7 @@ body {
   font-size: 2em;
   width: 100%;
   border: .005em #0497d0 solid;
-  padding: 5%;
+  padding: 13%;
   transition: 1s;
   text-decoration: none;
 }
