@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-family: Open Sans Condensed, open sans;
+  background-color: #222222;
+
+}
+
+body {
+  width: 100%;
+}
+
+h1 {
+  padding: 2%;
+  font-size: 1.99em;;
+}
+
+h2 {
+  padding: 2%;
+  font-size: 1.11em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+p {
+  font-size: .9em;
+
+}
+
+body {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-coordinate: 50% 50%;
+}
+
+#logo {
+  opacity: .66;
+  height: 35%;
+  width: 35%;
+  margin-left: 7%;
+  margin-top: 7%;
+}
+
+.welcome, .work, .philosophies {
+  background-color: #e5e5e5;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+#text-padding {
+  padding: 2%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 2%;
+  background-color: #222222;
+  margin-left: 60%;
+}
+
+.landing-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-image {
+  background-image: url('images/home.JPG');
+  background-size: cover;
+  height: 95vh;
+}
+
+.link {
+  text-decoration: none;
+  color: #e5e5e5;
+
+}
+
+
+
+/*  WELCOME SECTION DESIGN   */
+/*  WELCOME SECTION DESIGN   */
+/*  WELCOME SECTION DESIGN   */
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 9%;
+  padding-right: 5%;
+  align-self: center;
+  width: 43%;
+}
+
+.welcome-image {
+  background-image: url('images/home.JPG');
+  opacity: .7;
+  background-size: cover;
+  margin-top: 17%;
+  margin-bottom: 17%;
+  width: 57%;
+}
+
+.side-design {
+  width: 7%;
+  background-color: #222222;
+}
+
+#welcome-title-text {
+  padding: 2%;
+  margin-left: 5%;
+}
+
+
+
+
+/*  MISSION SECTION DESIGN   */
+/*  MISSION SECTION DESIGN   */
+/*  MISSION SECTION DESIGN   */
+
+.philosophies {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.philosophies-image {
+  background-image: url('images/home.jpg');
+  background-size: cover;
+  width: 37%;
+  opacity: 1;
+  margin-top: 37%;
+  margin-bottom: 17%;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+}
+
+#p-background {
+  background-color: rgba(34, 34, 34, 0.8);
+  width: 90%;
+  height: 100%;
+  padding-top: 5%;
+  padding-bottom: 15%;
+  margin-left: 0;
+
+}
+
+#adam {
+  width: 70%;
+  margin: auto;
+}
+
+#justin {
+  width: 70%;
+  margin: auto;
+}
+
+#philosophies-text {
+  display: flex;
+  flex-direction: row;
+  width: 63%;
+  margin-top: 25%;
+  margin-bottom: 45%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#philosophies-text-text-block {
+  margin-right: 13%;
+}
+
+#philosophies-text-image {
+  background-color: rgba(34, 34, 34, 0.8);
+
+}
+
+
+
+
+/*  WORK SECTION DESIGN   */
+/*  WORK SECTION DESIGN   */
+/*  WORK SECTION DESIGN   */
+
+.golden-ratio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: .2em #111111 solid;
+  box-sizing: border-box;
+  width: 70%;
+  margin: auto;
+}
+
+#first-level-one {
+  border: .1em #111111 solid;
+  box-sizing: border-box;
+}
+
+#first-level-one, #first-level-two {
+  height: 57vh;
+}
+
+#first-level-one {
+  width: 60%;
+  background-image: url('images/kendrick.png');
+  background-size: cover;
+  border: .1em #111111 solid;
+  box-sizing: border-box;
+}
+
+#first-level-two {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#second-level-one {
+  height: 66%;
+  width: 100%;
+  background-image: url('images/edibleCalc.png');
+  background-size: cover;
+  border: .1em #111111 solid;
+  box-sizing: border-box;
+}
+
+#second-level-two {
+  display: flex;
+  flex-direction: row;
+  height: 44%;
+  width: 100%;
+
+}
+
+#third-level-one {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 44%;
+}
+
+#third-level-two {
+  height: 100%;
+  width: 66%;
+  background-image: url('images/griz.png');
+  background-size: cover;
+  border: .1em #111111 solid;
+  box-sizing: border-box;
+}
+
+#fourth-level-one {
+  width: 100%;
+  height: 44%;
+  background-image: url('images/chrisRyan.png');
+  background-size: cover;
+  border: .1em #111111 solid;
+  box-sizing: border-box;
+}
+
+#fourth-level-two {
+  width: 100%;
+  height: 66%;
+  background-image: url('images/adamsCalc.png');
+  background-size: cover;
+  border: .1em #111111 solid;
+  box-sizing: border-box;
+}
+
+/*  FOOTER SECTION DESIGN   */
+
+.footerAndCopyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #111111;
+  height: 36.5vh;
+}
+
+.footer {
+  margin: auto;
+  text-align: center;
+  padding: 7%;
+  text-decoration: none;
+}
+
+.copyright {
+  padding: 3%;
+  background-color: #222222;
+  color: #999999;
+
+}
+
+#get-in-touch {
+  text-decoration: none;
+
+}
+
+#footer-call-to-action {
+  color: #0497d0;
+  font-size: 2em;
+  width: 100%;
+  border: .005em #0497d0 solid;
+  padding: 5%;
+  transition: 1s;
+  text-decoration: none;
+}
+
+#footer-call-to-action:hover {
+  color: #111111;
+  background-color: #0497d0;
+  transition: 1s;
+}
