@@ -69,7 +69,7 @@ body {
 }
 
 #menu-item {
-  margin-right: 2em;
+  margin-right: 3em;
   width: 100%;
 }
 
@@ -121,7 +121,7 @@ body {
 }
 
 .welcome-image {
-  background-image: url('images/home.JPG');
+  background-image: url('images/flower.JPG');
   opacity: .7;
   background-size: cover;
   margin: auto;
@@ -163,7 +163,7 @@ body {
 }
 
 .philosophies-image {
-  background-image: url('images/home.jpg');
+  background-image: url('images/stairs.jpg');
   background-size: cover;
   width: 37%;
   height: 20em;
