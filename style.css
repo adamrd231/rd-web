@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: Lato, Open Sans Condensed, open sans;
+  font-family: verdana;
   background-color: #222222;
 
 }
@@ -13,21 +13,27 @@ body {
 }
 
 h1 {
-  padding: 2%;
-  font-size: 1.99em;;
+  font-size: 4.236em;;
 }
 
 h2 {
-  padding: 2%;
-  font-size: 1.11em;
+  font-size: 2.618em;
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1.618em;
+}
+
+h4 {
+  font-size: 0.618em;
+}
+
+h5 {
+  font-size: 0.382em;
 }
 
 p {
-  font-size: .9em;
+  font-size: 1em;
 
 }
 
@@ -129,16 +135,6 @@ body {
   width: 57%;
 }
 
-#welcome-text {
-  margin-top: -.5em;
-  background-color: rgba(34, 34, 34, 0.0);
-  margin-left: 3.3em;
-  font-size: 1.6em;
-  opacity: .7;
-  color: #0497d0;
-  text-shadow: .1em .1em #111111;
-}
-
 .side-design {
   width: 7%;
   background-color: #0497d0;
@@ -152,27 +148,25 @@ body {
 
 
 
-/*  MISSION SECTION DESIGN   */
-/*  MISSION SECTION DESIGN   */
-/*  MISSION SECTION DESIGN   */
+/*  philosophies SECTION DESIGN   */
+/*  philosophies SECTION DESIGN   */
+/*  philosophies SECTION DESIGN   */
 
 .philosophies {
   display: flex;
   flex-direction: row;
-
 }
 
 .philosophies-image {
-  background-image: url('images/stairs.jpg');
+  background-image: url('images/stairs.JPG');
   background-size: cover;
   width: 37%;
   height: 20em;
-  margin-top: 50%;
   color: #999999;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #p-background {
@@ -196,6 +190,10 @@ body {
   width: 70%;
   margin: auto;
   padding: 3%;
+}
+
+.quote {
+  font-style: italic;
 }
 
 #philosophies-text {
