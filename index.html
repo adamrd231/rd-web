@@ -13,17 +13,24 @@
     <script type="text/javascript" src="jquery.easings.min.js"></script>
     <script type="text/javascript" src="scrolloverflow.min.js"></script>
     <script type="text/javascript" src="jquery.fullpage.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-      	$('#fullpage').fullpage({
-            anchors:['home', 'welcome','philosophy', 'work', 'contact'],
-
-        });
-      });
-    </script>
 
     <link rel="stylesheet" href="jquery.fullpage.css" />
     <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+        $('#fullpage').fullpage({
+
+            scrollbar: true,
+            anchors:['home', 'welcome','philosophy', 'work', 'contact'],
+            slidesNavigation: true,
+            navigation: true,
+            sectionsColor: ['#f2f2f2', '#e5e5e5', '#e5e5e5', '#222222'],
+
+        });
+    });
+  </script>
 
     <title>rdConcepts</title>
 
@@ -131,24 +138,28 @@
 <!-- Work -->
 <!-- Work -->
 <div class="section" id="work-background-color">
-  <div class="golden-ratio-container">
-
-    <div id="first-level-one">
+  <div class=".golden-ratio-container">
+    <div class="slide" data-anchor="slide1">
+      <div id="first-level-one"></div>
     </div>
-
-    <div id="first-level-two">
+    <div class="slide" data-anchor="slide2">
       <div id="second-level-one"></div>
-      <div id="second-level-two">
-        <div id="third-level-one">
-          <div id="fourth-level-one"></div>
-          <div id="fourth-level-two"></div>
-        </div>
-        <div id="third-level-two"></div>
-      </div>
+    </div>
+    <div class="slide" data-anchor="slide3">
+      <div id="third-level-two"></div>
+    </div>
+    <div class="slide" data-anchor="slide3">
+      <div id="fourth-level-one"></div>
+    </div>
+    <div class="slide" data-anchor="slide3">
+      <div id="fourth-level-two"></div>
     </div>
   </div>
-
 </div>
+
+
+
+
 
 <!-- Footer -->
 <!-- Footer -->

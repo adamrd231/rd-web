@@ -36,6 +36,9 @@ p {
 
 }
 
+.landing-container, .welcome, .philosophies, .golden-ratio-container {
+  height: 100%;
+}
 
 
 #logo {
@@ -46,11 +49,6 @@ p {
   margin-top: 5em;
 }
 
-.welcome, .philosophies {
-  background-color: #e5e5e5;
-  height: 100%;
-  width: 100%;
-}
 
 #text-padding {
   padding: 2%;
@@ -76,7 +74,7 @@ p {
 }
 
 .landing-container {
-    height: 100%;
+
     display: flex;
     flex-direction: column;
 }
@@ -201,7 +199,7 @@ p {
 }
 
 #philosophies-text-image {
-  background-color: #0497d0;
+
   width: 1.5em;
 
 }
@@ -215,7 +213,6 @@ p {
 }
 
 .golden-ratio-container {
-  background-color: #222222;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -228,10 +225,6 @@ p {
 
 }
 
-#first-level-one {
-  border: .2em #222222 solid;
-  box-sizing: border-box;
-}
 
 #first-level-one {
   width: 73%;
@@ -239,15 +232,10 @@ p {
   background-size: contain;
   border: .2em #222222 solid;
   box-sizing: border-box;
-
+  height: 70%;
+  margin: auto;
 }
 
-#first-level-two {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  box-sizing: border-box;
-}
 
 #second-level-one {
   height: 66%;
@@ -258,21 +246,6 @@ p {
   box-sizing: border-box;
 }
 
-#second-level-two {
-  display: flex;
-  flex-direction: row;
-  height: 44%;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-#third-level-one {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 44%;
-  box-sizing: border-box;
-}
 
 #third-level-two {
   height: 100%;
