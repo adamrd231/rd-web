@@ -36,7 +36,7 @@ p {
 
 }
 
-.landing-container, .welcome, .philosophies, .golden-ratio-container {
+.fp-bg, .welcome, .philosophies, .golden-ratio-container {
   height: 100%;
 }
 
@@ -124,6 +124,8 @@ p {
   margin-top: 13%;
   height: 66%;
   width: 57%;
+  border-top-left-radius: 5%;
+  border-bottom-right-radius: 13%;
 }
 
 .side-design {
@@ -148,39 +150,44 @@ p {
   flex-direction: row;
 }
 
-.philosophies-image {
-  background-image: url('images/stairs.JPG');
-  background-size: cover;
-  width: 37%;
-  height: 30%;
-  color: #999999;
-  margin-top: 13%;
-}
-
 #p-background {
   background-color: rgba(34, 34, 34, 0.9);
-  width: 87%;
-  height: 75%;
+  width: 49%;
+  height: 57%;
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
   flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  padding-top: 2%;
+  border-top-right-radius: 13%;
+  border-bottom-left-radius: 7%;
 }
 
 #adam {
-  width: 70%;
-  margin: auto;
-  padding: 3%;
+
+  padding: 5%;
+  width: 66%;
+  flex-grow: 1;
+
 }
 
 #justin {
-  width: 70%;
-  margin: auto;
-  padding: 3%;
+  padding: 5%;
+  width: 66%;
+  flex-grow: 1;
 }
 
 .quote {
+  font-size: 1.1em;
   font-style: italic;
+  color: #dfdfdf;
+}
+
+#name-employee {
+  font-size: 1.6em;
+  color: #dfdfdf;
 }
 
 #philosophies-text {
@@ -213,65 +220,66 @@ p {
 }
 
 .golden-ratio-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
+
   border: .4em #222222 solid;
   box-sizing: border-box;
-  width: 87%;
-  height: 53%;
+  width: 60%;
+  height: 60%;
   margin: auto;
 
 }
-
 
 #first-level-one {
-  width: 73%;
   background-image: url('images/kendrick.png');
-  background-size: contain;
-  border: .2em #222222 solid;
-  box-sizing: border-box;
-  height: 70%;
-  margin: auto;
 }
-
 
 #second-level-one {
-  height: 66%;
-  width: 100%;
   background-image: url('images/edibleCalc.png');
-  background-size: contain;
-  border: .2em #222222 solid;
-  box-sizing: border-box;
 }
 
-
 #third-level-two {
-  height: 100%;
-  width: 66%;
   background-image: url('images/griz.png');
-  background-size: contain;
-  border: .2em #222222 solid;
-  box-sizing: border-box;
 }
 
 #fourth-level-one {
-  width: 100%;
-  height: 44%;
   background-image: url('images/chrisRyan.png');
-  background-size: contain;
-  border: .2em #222222 solid;
-  box-sizing: border-box;
 }
 
 #fourth-level-two {
-  width: 100%;
-  height: 66%;
   background-image: url('images/adamsCalc.png');
+}
+
+#first-level-one,
+#second-level-one,
+#third-level-two,
+#fourth-level-one,
+#fourth-level-two {
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
   border: .2em #222222 solid;
   box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+
+}
+
+.fp-controlArrow.fp-prev {
+  margin-left: 7%;
+}
+
+.fp-controlArrow.fp-next {
+  margin-right: 7%;
+}
+
+.fp-slidesNav {
+  left: 90% !important;
+  bottom: 5.59% !important;
+}
+
+#fp-nav {
+  top: 91%;
 }
 
 /*  FOOTER SECTION DESIGN   */

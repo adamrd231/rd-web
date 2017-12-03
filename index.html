@@ -21,12 +21,13 @@
       $(document).ready(function() {
 
         $('#fullpage').fullpage({
+          css3: true,
+          scrollbar: true,
+          anchors:['home', 'welcome','philosophy', 'work', 'contact'],
+          slidesNavigation: true,
+          navigation: true,
+          sectionsColor: ['#f2f2f2', '#e5e5e5', '#e5e5e5', '#222222'],
 
-            scrollbar: true,
-            anchors:['home', 'welcome','philosophy', 'work', 'contact'],
-            slidesNavigation: true,
-            navigation: true,
-            sectionsColor: ['#f2f2f2', '#e5e5e5', '#e5e5e5', '#222222'],
 
         });
     });
@@ -41,7 +42,7 @@
 <div id="fullpage">
 
   <div class="section active">
-    <div class="landing-container">
+    <div class="fp-bg">
 
         <div class="background-image">
           <div>
@@ -98,19 +99,21 @@
 
       <div class="philosophies">
 
-        <div class="philosophies-image">
+
             <div id="p-background">
               <div id="adam">
-                <strong><h4>Adam Reed</h4></strong>
-                <p class="quote" id="text-padding">"If I had asked people what they wanted, they would have said faster horses."<br />
+                <strong><h4 id="name-employee">Adam Reed</h4></strong>
+                <p class="quote" id="text-padding">"If I had asked people what they wanted, they would have said faster horses."
+
                 <strong>Henry Ford</strong></p>
               </div>
               <div id="justin">
-                <h4>Justin Reed</h4>
-                  <p class="quote" id="text-padding">"Everything should be as simple as possible, but not simpler" -Albert Einstein</p>
+                <h4 id="name-employee">Justin Reed</h4>
+                <p class="quote" id="text-padding">"If I had asked people what they wanted, they would have said faster horses."
+                <strong id="quoted-person">Henry Ford</strong></p>
               </div>
             </div>
-        </div>
+
 
         <div id="philosophies-text">
 
