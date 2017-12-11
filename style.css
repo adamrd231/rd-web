@@ -124,8 +124,8 @@ p {
   margin-top: 13%;
   height: 66%;
   width: 57%;
-  border-top-left-radius: 5%;
-  border-bottom-right-radius: 13%;
+  /*border-top-left-radius: 5%;
+  border-bottom-right-radius: 13%;*/
 }
 
 .side-design {
@@ -158,25 +158,18 @@ p {
   margin-bottom: auto;
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+  align-content: center;
   justify-content: space-around;
   padding-top: 2%;
-  border-top-right-radius: 13%;
-  border-bottom-left-radius: 7%;
+  /*border-top-right-radius: 13%;
+  border-bottom-left-radius: 7%;*/
 }
 
-#adam {
+#adam, #justin {
 
   padding: 5%;
   width: 66%;
-  flex-grow: 1;
 
-}
-
-#justin {
-  padding: 5%;
-  width: 66%;
-  flex-grow: 1;
 }
 
 .quote {
@@ -188,6 +181,7 @@ p {
 #name-employee {
   font-size: 1.6em;
   color: #dfdfdf;
+  padding-bottom: 2%;
 }
 
 #philosophies-text {
@@ -221,15 +215,14 @@ p {
 
 .golden-ratio-container {
 
-  border: .4em #222222 solid;
+  border: 1em #222222 solid;
   box-sizing: border-box;
-  width: 60%;
-  height: 60%;
   margin: auto;
 
 }
 
 #first-level-one {
+
   background-image: url('images/kendrick.png');
 }
 
@@ -259,7 +252,7 @@ p {
   background-size: contain;
   border: .2em #222222 solid;
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
   height: 100%;
   margin: auto;
 
@@ -274,7 +267,7 @@ p {
 }
 
 .fp-slidesNav {
-  left: 90% !important;
+  left: 80% !important;
   bottom: 5.59% !important;
 }
 
