@@ -42,11 +42,17 @@ p {
   height: 100%;
 }
 
+#logo-container {
+  display: flex;
+  flex-direction: row;
+}
 
 #logo {
   opacity: .95;
   width: 5em;
-
+  height: 3.3em;
+  justify-content: flex-start;
+  margin-left: 3em;
 }
 
 
@@ -57,20 +63,25 @@ p {
 .menu {
   display: flex;
   flex-direction: row;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 1.66%;
+  padding-bottom: 1.66%;
   background-color: rgba(255, 255, 255, 0.95);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 
 }
 
-
+#menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 1em !important;
+}
 
 #menu-item {
-  margin-right: 3em;
   color: #222222;
+  margin-right: 2em !important;
 }
 
 #menu-item:hover {
