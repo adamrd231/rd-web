@@ -303,10 +303,62 @@ p {
 }
 
 .footer {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5%;
+}
+
+#mailchimp {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+
+}
+
+
+#mce-EMAIL {
+  width: 98%;
+  font-size: .66em;
+  padding: 1%;
+  background-color: #222222;
+  border: none;
+  color: #e5e5e5;
+}
+
+#mc-embedded-subscribe {
+  background-color: #0497d0;
+  border: none;
+  color: #e5e5e5;
+  width: 100%;
+  padding: 2%;
+}
+
+#contact-rd {
   margin: auto;
   text-align: center;
   padding: 5%;
   text-decoration: none;
+}
+
+#footer-call-to-action {
+  color: #0497d0;
+  font-size: 1.66em;
+  width: 100%;
+  border: .005em #0497d0 solid;
+  padding: 10%;
+  transition: 1s;
+  text-decoration: none;
+
+}
+
+#get-in-touch {
+  text-decoration: none;
+}
+
+#footer-call-to-action:hover {
+  color: #111111;
+  background-color: #0497d0 !important;
+  transition: 1s;
 }
 
 .copyright {
@@ -325,25 +377,6 @@ p {
   width: 3em;
 }
 
-#get-in-touch {
-  text-decoration: none;
-}
-
-#footer-call-to-action {
-  color: #0497d0;
-  font-size: 2em;
-  width: 100%;
-  border: .005em #0497d0 solid;
-  padding: 13%;
-  transition: 1s;
-  text-decoration: none;
-}
-
-#footer-call-to-action:hover {
-  color: #111111;
-  background-color: #0497d0;
-  transition: 1s;
-}
 
 /*RESPONSIVE DESIGN BREAKPOINTS*/
 @media screen and (max-width:600px) {
