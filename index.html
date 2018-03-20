@@ -2,183 +2,180 @@
 <!DOCTYPE html>
 
 <html>
-
   <head>
-
-    <link rel="shortcut icon" type="image/png" src="favicon.png"/>
-    <link rel="shortcut icon" type="image/png" src="favicon.png"/>
-
+    <!-- CSS Styling Links -->
+    <link rel="shortcut icon" href="rdConcepts.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="jquery.fullpage.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=UA-112931130-1"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-112931130-1');
+    </script>
+    <!-- JS Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script type="text/javascript" src="jquery.easings.min.js"></script>
     <script type="text/javascript" src="scrolloverflow.min.js"></script>
     <script type="text/javascript" src="jquery.fullpage.js"></script>
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"bfc29297dcb000234d9398585","lid":"0aa96e736c"}) })</script>
     <script type="text/javascript">
       $(document).ready(function() {
-      	$('#fullpage').fullpage({
-            anchors:['home', 'welcome','philosophy', 'work', 'contact']
+        $('#fullpage').fullpage({
+          css3: true,
+          scrollbar: true,
+          anchors:['home', 'welcome','team', 'work', 'contact'],
+          slidesNavigation: true,
+          navigation: true,
+          sectionsColor: ['#e5e5e5', '#e5e5e5', '#e5e5e5', '#111111', '#111111'],
         });
-      });
+    });
     </script>
-
-    <link rel="stylesheet" href="jquery.fullpage.css" />
-    <link rel="stylesheet" href="style.css" />
-
+    
     <title>rdConcepts</title>
-
   </head>
-
-  <body>
-
+<body>
+  
+<!-- LANDING IMAGE -->
+<!-- LANDING IMAGE -->  
 <div id="fullpage">
+  <!-- Begin fullPage wrap -->
 
   <div class="section active">
-    <div class="landing-container">
+    <div class="fp-bg">
+      <div class="background-image">
 
-        <div class="background-image">
-          <div>
+<!-- NAV BAR -->
+        <div class="menu" id="menu">
+          <!-- Logo -->
+          <div id="logo-container">
             <img id="logo" src="images/logo.png" />
           </div>
-
-
-          <!-- Header Menu Layout -->
-          <div class="menu" id="menu">
-              <strong><div><a id="menu-item" href="http://rdconcepts.design/#welcome" class="link"> WELCOME</a></div></strong>
-              <strong><div><a id="menu-item" href="http://rdconcepts.design/#philosophy" class="link"> OUR PHILOSOPHY </a></div></strong>
-              <strong><div><a id="menu-item" href="http://rdconcepts.design/#work" class="link"> WORK </a></div></strong>
-              <strong><div><a id="menu-item" href="http://rdconcepts.design/#contact" class="link"> CONTACT </a></div></strong>
+          <!-- Links -->
+          <div id="menu-container">
+            <div><a id="menu-item" href="http://rdconcepts.design/#home" class="link">HOME</a></div>
+            <div><a id="menu-item" href="http://rdconcepts.design/#welcome" class="link">WELCOME</a></div>
+            <div><a id="menu-item" href="http://rdconcepts.design/#team" class="link">TEAM </a></div>
+            <div><a id="menu-item" href="http://rdconcepts.design/#work" class="link">WORK </a></div>
+            <div><a id="menu-item" href="http://rdconcepts.design/#contact" class="link">CONTACT </a></div>
           </div>
         </div>
-
-
-
-
+      </div>
     </div>
   </div>
 
-    <!-- Landing Area -->
-    <!-- Landing Area -->
-    <!-- Landing Area -->
-    <div class="section">
 
-    <div class="welcome">
-
-      <div class="text-container">
-        <div class="side-design"></div>
-        <div id="welcome-title-text">
-          <h2>Welcome</h2>
-            <h3 id="text-padding">Simplify the world for more time to play.</h3>
-              <p id="text-padding">
-                Founded in July 2015 rdConcepts is a design firm interested in challenging what has always been considered normal. Through careful prioritization, we are able to execute across a variety of different mediums. We believe in the value of design executed simply, finding the correct framework to solve a problem and building energy and passion for making the world a better place.
-              </p>
+<!-- WELCOME -->
+<!-- WELCOME -->
+  <div class="section">
+    <div class="welcome-flex-container">
+        <!-- Welcome Text -->
+        <div id="welcome-text">
+          <strong><div id="h1-text">Welcome</div></strong>
+            <div id="text-padding">Communication through planning, design and devlopment. Founded in July 2015, rdConcepts is a design firm interested in challenging what has always been considered normal. We believe the tools to the solution are inherently dependent on the problem.</div>
         </div>
-      </div>
-
-      <div class="welcome-image">
-      </div>
+      <!-- Image -->
+      <div class="welcome-image"></div>
 
   </div>
 
 </div>
 
 
-<!-- Philosophies -->
-<!-- Philosophies -->
-<!-- Philosophies -->
-
-    <div class="section">
-
-      <div class="philosophies">
-
-        <div class="philosophies-image">
-            <div id="p-background">
-              <div id="adam">
-                <strong><h4>Adam Reed</h4></strong>
-                <p class="quote" id="text-padding">"If I had asked people what they wanted, they would have said faster horses."<br />
-                <strong>Henry Ford</strong></p>
-              </div>
-              <div id="justin">
-                <h4>Justin Reed</h4>
-                  <p class="quote" id="text-padding">"Everything should be as simple as possible, but not simpler" -Albert Einstein</p>
-              </div>
-            </div>
-        </div>
-
-        <div id="philosophies-text">
-
-          <div id="philosophies-text-text-block">
-            <h3>OUR VALUES</h3>
-              <p id="text-padding">
-                Every design in the world originated from someone's pain. Whether it is the pain of not having the resources needed to live, the pain of a boring job, or the pain taken while trying to bring the ring of power to mordor. Great pain when understood, brings great design. Our goal in life is to live with and contemplate the best ways for us to enjoy the world around us and spread as much joy as possible.
-              </p>
-
-              <h3>Teamwork Makes the Dream Work</h3>
-                <p id="text-padding">
-                  Changing the world is a big job, we realize that it might be a bigger task than can be accomplished by two people. We regularly work with other contractors, businesses and individuals to help solve their problems in a simple, beautiful way.
-                </p>
-          </div>
-
-          <div id="philosophies-text-image">
-          </div>
-
-        </div>
+<!-- TEAM -->
+<!-- TEAM -->
+  <div class="section">
+    <div class="team-members">
+      <!-- Adam's Side -->
+      <div id="adam-container">
+          <strong><div id="adam">Adam Reed</div></strong>
+          <div id="sub-heading">iOS, Digital Illustration, Information Design.</div>
+          <div class="quote" id="text-padding">"If I had asked people what they wanted, they would have said faster horses."</div>
+          <div id="quote-person"><strong class="quote" id="text-padding">Henry Ford</strong></div>
       </div>
+      <!-- Justins's Side -->
+      <div id="justin-container">
+          <strong><div id="justin-name">Justin Reed</div></strong>
+          <div id="sub-heading">iOS, Analysis Design, Rapid Prototyping.</div>
+          <div class="quote" id="text-padding">"When I am working on a problem, I never think about beauty but when I have finished, if the solution is not beautiful, I know it is wrong."</div>
+          <div id="quote-person"><strong class="quote" id="text-padding">Buckminster Fuller</strong></div>
+      </div>
+          
+    </div>    
+  </div>
 
-    </div>
 
-<!-- Work -->
 <!-- Work -->
 <!-- Work -->
 <div class="section" id="work-background-color">
-  <div class="golden-ratio-container">
-
-    <div id="first-level-one">
+  <div class="work-container">
+    <div class="slide" data-anchor="slide1">
+      <div id="first-level-one"></div>
     </div>
-
-    <div id="first-level-two">
+    <div class="slide" data-anchor="slide2">
       <div id="second-level-one"></div>
-      <div id="second-level-two">
-        <div id="third-level-one">
-          <div id="fourth-level-one"></div>
-          <div id="fourth-level-two"></div>
-        </div>
-        <div id="third-level-two"></div>
-      </div>
+    </div>
+    <div class="slide" data-anchor="slide3">
+      <div id="third-level-two"></div>
+    </div>
+    <div class="slide" data-anchor="slide3">
+      <div id="fourth-level-one"></div>
+    </div>
+    <div class="slide" data-anchor="slide3">
+      <div id="fourth-level-two"></div>
     </div>
   </div>
-
 </div>
 
-<!-- Footer -->
-<!-- Footer -->
-<!-- Footer -->
 
+<!-- Footer + Copyright -->
+<!-- Footer + Copyright -->
 <div class="section fp-auto-height">
-    <div class="footerAndCopyright">
-      <div class="footer">
-        <a id="get-in-touch" href="mailto:info@rdconcepts.design">
-          <h2 id="footer-call-to-action">GET IN TOUCH</h2>
-        </a>
+  <div class="footer">
+    
+    <div id="mailchimp">
+        <!-- Begin MailChimp Signup Form -->
+          <form id="mailchimp-form" action="https://design.us17.list-manage.com/subscribe/post?u=bfc29297dcb000234d9398585&amp;id=0aa96e736c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            
+              <div id="mc_embed_signup_scroll">
+                <!-- Email Input -->
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Sign-up for our Newsletter" required>
+              </div>
+              <div class="mChimp-fBox">
+                <!-- Button -->
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+            
+          </form>
+          
       </div>
-
+      <!--End mc_embed_signup-->
+      
+    <div id="contact-rd">
+      <a id="get-in-touch" href="mailto:info@rdconcepts.design">
+        <div id="footer-call-to-action">GET IN TOUCH</div>
+      </a>
+    </div>
+    
+  </div> 
+   
+    <!-- Copyright Bar -->
+    <!-- Copyright Bar -->
       <div class="copyright">
-
-
         <div id="copyright-text">
-          <strong><p>Thanks for Visiting</p></strong>
-            <p>Website Design and Development by rdConcepts</p>
-            <p>Portland, OR</p>
+          <strong><div>Thanks for Visiting</div></strong>
+            <div>Website Design and Development by rdConcepts</div>
+            <div>Portland, OR</div>
         </div>
 
         <div id="social-media-icons">
           <a href="https://www.instagram.com/adamrd231/"><img id="social-icon" src="images/github.png" /></a>
           <a href="https://github.com/adamrd231"><img id="social-icon" src="images/instagram.png" /></a>
-        </div>
-
-
+        </div>  
       </div>
 
-    </div>
 </div>
 
 <!-- end fullPage wrap -->

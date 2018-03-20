@@ -1,44 +1,9 @@
-* {
-  margin: 0;
-}
 
 html {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-
 }
 
-body {
-  width: 100%;
-}
-
-h1 {
-  font-size: 4.236em;
-}
-
-h2 {
-  font-size: 2.618em;
-}
-
-h3 {
-  font-size: 1.618em;
-  color: #666666;
-}
-
-h4 {
-  font-size: 1em;
-  color: #333333;
-}
-
-h5 {
-  font-size: 0.382em;
-}
-
-p {
-  font-size: 1em;
-
-}
-
-.fp-bg, .welcome, .philosophies, .golden-ratio-container {
+.fp-bg, .background-image, .welcome-flex-container, .team-members, .work-container {
   height: 100%;
 }
 
@@ -57,7 +22,7 @@ p {
 
 
 #text-padding {
-  padding: 2%;
+
 }
 
 .menu {
@@ -97,7 +62,6 @@ p {
 .background-image {
   background-image: url('images/home.JPG');
   background-size: cover;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -108,86 +72,74 @@ p {
 .link {
   text-decoration: none;
   color: #e5e5e5;
-
 }
 
 
 
 /*  WELCOME SECTION DESIGN   */
 /*  WELCOME SECTION DESIGN   */
-/*  WELCOME SECTION DESIGN   */
-
-.welcome {
+.welcome-flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: stretch;
 }
 
-.text-container {
-  display: flex;
-  flex-direction: row;
-  padding-left: 3%;
-  padding-right: 3%;
+#welcome-text {
   align-self: center;
-  width: 43%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 4%;
+  font-size: 1.66em;
+}
+
+#h1-text {
+  
 }
 
 .welcome-image {
   background-image: url('images/flower.JPG');
   opacity: .7;
   background-size: cover;
-  height: 100%;
-  width: 57%;
-  /*border-top-left-radius: 5%;
-  border-bottom-right-radius: 13%;*/
-}
-
-.side-design {
-  width: 4%;
-  background-color: #0497d0;
-}
-
-#welcome-title-text {
-  padding: 2%;
-  margin-left: 5%;
+  align-items: stretch;
+  flex: 1;
 }
 
 
+/*  TEAM   */
+/*  TEAM   */
 
-
-/*  philosophies SECTION DESIGN   */
-/*  philosophies SECTION DESIGN   */
-/*  philosophies SECTION DESIGN   */
-
-.philosophies {
+.team-members {
   display: flex;
   flex-direction: row;
 }
 
-#p-background {
-  background-color: #222222;
-  width: 66%;
-  height: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
+#adam-container {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: space-around;
-  padding-top: 2%;
-  /*border-top-right-radius: 13%;
-  border-bottom-left-radius: 7%;*/
-}
-
-#adam-block {
+  font-size: 1.43em !important;
   color: #e5e5e5;
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%;
+  background-color: #222222;
+  flex: 1;
+  align-items: stretch;
+  justify-content: center;
+  padding: 4%;
 }
 
-#adam, #justin {
-  font-size: 1.66em !important;
+#justin-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.43em !important;
+  flex: 1;
+  align-items: stretch;
+  justify-content: center;
+  padding: 4%;
+}
+
+#sub-heading {
+  font-size: .66em;
+  padding-bottom: 3%;
 }
 
 #adam {
@@ -195,33 +147,11 @@ p {
 }
 
 .quote {
-  font-size: 1.1em;
   font-style: italic;
 }
 
-#name-employee {
-  font-size: 1.6em;
-  color: #dfdfdf;
-  padding-bottom: 2%;
-}
-
-#philosophies-text {
-  width: 34%;
-  margin-left: 5%;
-  margin-right: 5%;
-  align-self: center;
-}
-
-#philosophies-text-text-block {
-  margin-right: 17%;
-  margin-left: 5%;
-  align-self: flex-start;
-}
-
-#philosophies-text-image {
-
-  width: 1.5em;
-
+#quote-person {
+  font-size: .66em;
 }
 
 
@@ -239,7 +169,6 @@ p {
 }
 
 #first-level-one {
-
   background-image: url('images/kendrick.png');
 }
 
@@ -274,6 +203,7 @@ p {
 
 }
 
+/*  Side Arrows and Nav Buttons   */
 .fp-controlArrow.fp-prev {
   margin-left: 3%;
 }
@@ -283,86 +213,94 @@ p {
 }
 
 .fp-slidesNav {
-  left: 80% !important;
-  bottom: 5.59% !important;
+  left: 45% !important;
+  bottom: 2% !important;
 }
 
-#fp-nav {
-  top: 91%;
-}
+
 
 /*  FOOTER SECTION DESIGN   */
-
-.footerAndCopyright {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #121212;
-  box-sizing: border-box;
-
-}
 
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   color: #e5e5e5;
 }
 
 #mailchimp {
+  flex: 1;
+}
+
+#mailchimp-flexbox {
   display: flex;
   flex-direction: column;
-  padding: 5%;
-  flex: 1;
-  align-items: stretch;
-  color: #e5e5e5;
+
 }
 
-#mailchimp-title {
-  align-items: center;
+#mailchimp-form {
+  height: 100%;
 }
 
+#mc_embed_signup_scroll {
+  height: 40%;
+  /* border-bottom: .2em solid #0497d0; */
+  box-sizing: border-box;
+}
 
 #mce-EMAIL {
-  width: 98%;
+  height: 100%;
+}
+
+.mChimp-fBox {
+  height: 60%;
+}
+
+#mce-EMAIL {
+  flex: 1;
   font-size: 1em;
-  padding: 1%;
-  background-color: #222222;
+  background-color: #111111;
   border: none;
-  color: white;
+  
+  color: #e5e5e5;
+  width: 100%;
+  text-align: center;
 
 }
 
 #mc-embedded-subscribe {
-  background-color: #0497d0;
+  flex: 1;
+  background-color: #111111;
   border: none;
   color: #e5e5e5;
   font-size: 1em;
   width: 100%;
-  margin-top: .5%;
-  padding: 2%;
+  height: 100%;
+  transition: 1s;
 }
+
+#mc-embedded-subscribe:hover {
+  background-color: #0497d0;
+  transition: 1s;
+
+}
+
 
 #contact-rd {
   flex: 1.3;
+  text-decoration: none;
+  
+}
 
+#get-in-touch {
   text-decoration: none;
 }
 
 #footer-call-to-action {
   color: #0497d0;
   font-size: 2em;
-  width: 100%;
-
-  padding: 15%;
   transition: 1s;
   text-decoration: none;
-
-}
-
-#get-in-touch {
-  text-decoration: none;
+  padding: 9%;
 }
 
 #footer-call-to-action:hover {
@@ -380,6 +318,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items:center;
+
 }
 
 #social-icon {
