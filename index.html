@@ -5,40 +5,24 @@
 
   <head>
 
-    <link rel="shortcut icon" href="rdConcepts.ico" type="image/x-icon" />
-
-
-
-
-
+    <link rel="shortcut icon" type="image/png" src="favicon.png"/>
+    <link rel="shortcut icon" type="image/png" src="favicon.png"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="jquery.easings.min.js"></script>
     <script type="text/javascript" src="scrolloverflow.min.js"></script>
     <script type="text/javascript" src="jquery.fullpage.js"></script>
-
+    <script type="text/javascript">
+      $(document).ready(function() {
+      	$('#fullpage').fullpage({
+            anchors:['home', 'welcome','philosophy', 'work', 'contact']
+        });
+      });
+    </script>
 
     <link rel="stylesheet" href="jquery.fullpage.css" />
     <link rel="stylesheet" href="style.css" />
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-
-        $('#fullpage').fullpage({
-          css3: true,
-          scrollbar: true,
-          anchors:['home', 'welcome','philosophy', 'work', 'contact'],
-          slidesNavigation: true,
-          navigation: true,
-          sectionsColor: ['#f2f2f2', '#e5e5e5', '#e5e5e5', '#111111'],
-
-
-        });
-    });
-  </script>
-
-      <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"bfc29297dcb000234d9398585","lid":"0aa96e736c"}) })</script>
 
     <title>rdConcepts</title>
 
@@ -49,24 +33,20 @@
 <div id="fullpage">
 
   <div class="section active">
-    <div class="fp-bg">
+    <div class="landing-container">
 
         <div class="background-image">
-
+          <div>
+            <img id="logo" src="images/logo.png" />
+          </div>
 
 
           <!-- Header Menu Layout -->
           <div class="menu" id="menu">
-            <div id="logo-container">
-              <img id="logo" src="images/logo.png" />
-            </div>
-            <div id="menu-container">
               <strong><div><a id="menu-item" href="http://rdconcepts.design/#welcome" class="link"> WELCOME</a></div></strong>
-              <strong><div><a id="menu-item" href="http://rdconcepts.design/#philosophy" class="link"> TEAM </a></div></strong>
+              <strong><div><a id="menu-item" href="http://rdconcepts.design/#philosophy" class="link"> OUR PHILOSOPHY </a></div></strong>
               <strong><div><a id="menu-item" href="http://rdconcepts.design/#work" class="link"> WORK </a></div></strong>
               <strong><div><a id="menu-item" href="http://rdconcepts.design/#contact" class="link"> CONTACT </a></div></strong>
-            </div>
-
           </div>
         </div>
 
@@ -86,10 +66,10 @@
       <div class="text-container">
         <div class="side-design"></div>
         <div id="welcome-title-text">
-          <strong><h2 id="strong">Welcome</h2></strong>
-            <h4 id="text-padding">Communication through planning, design and devlopment.</h4>
+          <h2>Welcome</h2>
+            <h3 id="text-padding">Simplify the world for more time to play.</h3>
               <p id="text-padding">
-                Founded in July 2015 rdConcepts is a design firm interested in challenging what has always been considered normal. We believe the tools to the solution are inherently dependent on the probelm. We believe in the value of design executed simply. We believe in making the world a better place.
+                Founded in July 2015 rdConcepts is a design firm interested in challenging what has always been considered normal. Through careful prioritization, we are able to execute across a variety of different mediums. We believe in the value of design executed simply, finding the correct framework to solve a problem and building energy and passion for making the world a better place.
               </p>
         </div>
       </div>
@@ -110,30 +90,32 @@
 
       <div class="philosophies">
 
-
+        <div class="philosophies-image">
             <div id="p-background">
-
-              <div id="adam-block">
-                <strong><h4 id="adam">Adam Reed</h4></strong>
-                <h6>iOS, Digital Illustration, Information Design.</h6>
-                <br />
-                <p class="quote" id="text-padding">"If I had asked people what they wanted, they would have said faster horses."
-                <br /><strong class="quote" id="text-padding">Henry Ford</strong></p>
+              <div id="adam">
+                <strong><h4>Adam Reed</h4></strong>
+                <p class="quote" id="text-padding">"If I had asked people what they wanted, they would have said faster horses."<br />
+                <strong>Henry Ford</strong></p>
               </div>
-
+              <div id="justin">
+                <h4>Justin Reed</h4>
+                  <p class="quote" id="text-padding">"Everything should be as simple as possible, but not simpler" -Albert Einstein</p>
+              </div>
             </div>
-
+        </div>
 
         <div id="philosophies-text">
 
-          <div id="justin-block">
-            <h4 id="justin">Justin Reed</h4>
-            <h6>iOS, Analysis Design, Rapid Prototyping.</h6>
-            <br />
-            <p class="quote" id="text-padding">"When I am working on a problem, I never think about beauty but when I have finished, if the solution is not beautiful, I know it is wrong."
-            <br /><strong class="quote" id="text-padding">Buckminster Fuller</strong></p>
-          </div>
+          <div id="philosophies-text-text-block">
+            <h3>OUR VALUES</h3>
+              <p id="text-padding">
+                Every design in the world originated from someone's pain. Whether it is the pain of not having the resources needed to live, the pain of a boring job, or the pain taken while trying to bring the ring of power to mordor. Great pain when understood, brings great design. Our goal in life is to live with and contemplate the best ways for us to enjoy the world around us and spread as much joy as possible.
+              </p>
 
+              <h3>Teamwork Makes the Dream Work</h3>
+                <p id="text-padding">
+                  Changing the world is a big job, we realize that it might be a bigger task than can be accomplished by two people. We regularly work with other contractors, businesses and individuals to help solve their problems in a simple, beautiful way.
+                </p>
           </div>
 
           <div id="philosophies-text-image">
@@ -142,33 +124,30 @@
         </div>
       </div>
 
+    </div>
 
 <!-- Work -->
 <!-- Work -->
 <!-- Work -->
 <div class="section" id="work-background-color">
-  <div class=".golden-ratio-container">
-    <div class="slide" data-anchor="slide1">
-      <div id="first-level-one"></div>
+  <div class="golden-ratio-container">
+
+    <div id="first-level-one">
     </div>
-    <div class="slide" data-anchor="slide2">
+
+    <div id="first-level-two">
       <div id="second-level-one"></div>
-    </div>
-    <div class="slide" data-anchor="slide3">
-      <div id="third-level-two"></div>
-    </div>
-    <div class="slide" data-anchor="slide3">
-      <div id="fourth-level-one"></div>
-    </div>
-    <div class="slide" data-anchor="slide3">
-      <div id="fourth-level-two"></div>
+      <div id="second-level-two">
+        <div id="third-level-one">
+          <div id="fourth-level-one"></div>
+          <div id="fourth-level-two"></div>
+        </div>
+        <div id="third-level-two"></div>
+      </div>
     </div>
   </div>
+
 </div>
-
-
-
-
 
 <!-- Footer -->
 <!-- Footer -->
@@ -177,44 +156,9 @@
 <div class="section fp-auto-height">
     <div class="footerAndCopyright">
       <div class="footer">
-
-      <div id="mailchimp">
-          <div id="mailchimp-title">
-            <h3>INTERESTED IN LEARNING MORE?</h3>
-          </div>
-
-          <div id="flex-chimp">
-            <!-- Begin MailChimp Signup Form -->
-
-                <style type="text/css">
-                #mc_embed_signup{ color: #e5e5e5; clear:left; font: Futura, "Trebuchet MS", Arial, sans-serif; width:100%;}
-                /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-                </style>
-
-
-                <div id="mc_embed_signup">
-                <form action="https://design.us17.list-manage.com/subscribe/post?u=bfc29297dcb000234d9398585&amp;id=0aa96e736c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <div id="mc_embed_signup_scroll">
-
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bfc29297dcb000234d9398585_0aa96e736c" tabindex="-1" value=""></div>
-                  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                  </div>
-                </form>
-                </div>
-          </div>
-
-
-<!--End mc_embed_signup-->
-      </div>
-        <div id="contact-rd">
-          <a id="get-in-touch" href="mailto:info@rdconcepts.design">
-            <h2 id="footer-call-to-action">GET IN TOUCH</h2>
-          </a>
-        </div>
-
+        <a id="get-in-touch" href="mailto:info@rdconcepts.design">
+          <h2 id="footer-call-to-action">GET IN TOUCH</h2>
+        </a>
       </div>
 
       <div class="copyright">
